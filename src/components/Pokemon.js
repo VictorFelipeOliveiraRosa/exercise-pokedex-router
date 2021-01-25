@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../css/pokemon.css';
+import { Favorite } from './Favorite';
 
 class Pokemon extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class Pokemon extends React.Component {
           </p>
           <Link to={`/pokemons/${id}`}>Mais detalhes</Link>
         </div>
+        <Favorite idPokemon={id} />
         <img src={image} alt={`${name} sprite`} />
       </div>
     );

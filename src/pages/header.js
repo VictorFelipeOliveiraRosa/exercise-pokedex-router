@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
+    <h1>Pokédex</h1>
     <nav>
       <ul>
         <li>
@@ -12,7 +13,7 @@ const Header = () => (
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/favorite">Favorite Pokémon</Link>
+          <Link to="/favorites">Favorite Pokémon</Link>
         </li>
         <li>
           <Link to="/teste">Teste Pokedex</Link>
